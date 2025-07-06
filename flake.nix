@@ -113,6 +113,7 @@
       # This is for plugins that will load at startup without using packadd:
       startupPlugins = with pkgs.vimPlugins; {
         general = [
+          bufferline-nvim
           vim-sleuth
           lazy-nvim
           comment-nvim
