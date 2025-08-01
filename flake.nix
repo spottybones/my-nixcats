@@ -158,15 +158,6 @@
         kickstart-autopairs = [
           nvim-autopairs
         ];
-        kickstart-neo-tree = [
-          neo-tree-nvim
-          nui-nvim
-          # nixCats will filter out duplicate packages
-          # so you can put dependencies with stuff even if they're
-          # also somewhere else
-          nvim-web-devicons
-          plenary-nvim
-        ];
       };
 
       # not loaded automatically at startup.
@@ -253,7 +244,6 @@
           test = true;
 
           kickstart-autopairs = true;
-          kickstart-neo-tree = true;
           kickstart-debug = true;
           kickstart-lint = true;
           kickstart-indent_line = true;

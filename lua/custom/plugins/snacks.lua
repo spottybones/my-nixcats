@@ -60,5 +60,15 @@ return {
     vim.keymap.set('n', '<leader>sn', function()
       Snacks.picker.files { cwd = vim.fn.stdpath 'config', title = 'Search Neovim Config Files' }
     end, { desc = '[S]earch [N]eovim files' })
+
+    -- open up LazyGit
+    vim.keymap.set('n', '<leader>gg', function()
+      Snacks.lazygit()
+    end, { desc = '[G] Open lazy[G]it' })
+
+    -- open the file explorer
+    vim.keymap.set('n', '\\', function()
+      Snacks.explorer.open()
+    end, { desc = '[\\] Open File Explorer' })
   end,
 }
