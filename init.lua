@@ -795,6 +795,10 @@ require('nixCatsUtils.lazyCat').setup(nixCats.pawsible { 'allPlugins', 'start', 
 
   { -- Collection of various small independent plugins/modules
     'echasnovski/mini.nvim',
+    dependencies = {
+      { 'nvim-tree/nvim-web-devicons', opt = {} },
+    },
+
     config = function()
       -- Better Around/Inside textobjects
       --
