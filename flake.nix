@@ -101,6 +101,8 @@
           lua-language-server
           nixd
           stylua
+          lua51Packages.luarocks
+          lua51Packages.lua
         ];
         kickstart-debug = [
           delve
