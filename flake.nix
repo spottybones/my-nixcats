@@ -119,9 +119,6 @@
           comment-nvim
           gitsigns-nvim
           which-key-nvim
-          telescope-nvim
-          telescope-fzf-native-nvim
-          telescope-ui-select-nvim
           nvim-web-devicons
           plenary-nvim
           nvim-lspconfig
