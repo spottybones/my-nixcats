@@ -232,6 +232,8 @@
           # neovim-unwrapped = inputs.neovim-nightly-overlay.packages.${pkgs.system}.neovim;
           hosts.python3.enable = true;
           hosts.node.enable = true;
+          hosts.perl.enable = false;
+          hosts.ruby.enable = false;
         };
         # and a set of categories that you want
         # (and other information to pass to lua)
