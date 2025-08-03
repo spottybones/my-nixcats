@@ -182,18 +182,12 @@
       # this section is for environmentVariables that should be available
       # at RUN TIME for plugins. Will be available to path within neovim terminal
       environmentVariables = {
-        test = {
-          CATTESTVAR = "It worked!";
-        };
       };
 
       # If you know what these are, you can provide custom ones by category here.
       # If you dont, check this link out:
       # https://github.com/NixOS/nixpkgs/blob/master/pkgs/build-support/setup-hooks/make-wrapper.sh
       extraWrapperArgs = {
-        test = [
-          '' --set CATTESTVAR2 "It worked again!"''
-        ];
       };
 
       # lists of the functions you would have passed to
@@ -205,11 +199,9 @@
       # vim.g.python3_host_prog
       # or run from nvim terminal via :!<packagename>-python3
       python3.libraries = {
-        test = (_:[]);
       };
       # populates $LUA_PATH and $LUA_CPATH
       extraLuaPackages = {
-        test = [ (_:[]) ];
       };
     };
 
@@ -244,7 +236,6 @@
           general = true;
           gitPlugins = true;
           customPlugins = true;
-          test = true;
 
           kickstart-autopairs = true;
           kickstart-debug = true;
